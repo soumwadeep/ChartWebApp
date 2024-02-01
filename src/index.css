@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+.chart-container {
+  width: 100%;
+  /* min-width: 300px; */
+  max-width: 800px;
+  overflow-x: scroll!important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* canvas{
+  min-width: 80vw!important;
+} */
