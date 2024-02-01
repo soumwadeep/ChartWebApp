@@ -7,7 +7,7 @@ const data = {
   datasets: [
     {
       label: "Completed",
-      data: [60, 62, 40, 50],
+      data: [100, 62, 40, 50],
       backgroundColor: "#00C49A",
     },
     {
@@ -17,7 +17,7 @@ const data = {
     },
     {
       label: "Partially completed",
-      data: [60, 60, 30, 30],
+      data: [60, 60, 90, 30],
       backgroundColor: "#619BFF",
     },
   ],
