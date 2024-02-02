@@ -1,6 +1,5 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import Chart from "chart.js/auto";
 
 const data = {
   labels: ["About Us", "About Product", "Delegation", "Time Management"],
@@ -25,12 +24,16 @@ const data = {
 
 const options = {
   scales: {
-    x: {
-      type: "category",
-    },
-    y: {
-      beginAtZero: true,
-    },
+    xAxes: [
+      {
+        stacked: true,
+      },
+    ],
+    yAxes: [
+      {
+        stacked: true,
+      },
+    ],
   },
   elements: {
     bar: {
@@ -38,14 +41,6 @@ const options = {
     },
   },
   responsive: true,
-  scales: {
-    x: {
-      stacked: true,
-    },
-    y: {
-      stacked: true,
-    },
-  },
   plugins: {
     legend: {
       position: "top",
@@ -60,8 +55,10 @@ const options = {
 const HorizontalGraph = () => {
   return (
     <center>
-      <div className="chart-container">
-        <Bar data={data} options={options} />
+      <div className="scrollable-chart-container">
+        <div className="chart-container">
+          <Bar data={data} options={options} />
+        </div>
       </div>
     </center>
   );
