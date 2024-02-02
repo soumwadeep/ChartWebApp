@@ -3,21 +3,21 @@ import { Bar } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 
 const data = {
-  labels: ["About us", "About Product", "Delegation", "Time Management"],
+  labels: ["About Us", "About Product", "Delegation", "Time Management"],
   datasets: [
     {
       label: "Completed",
-      data: [100, 62, 40, 50],
+      data: [15, 20, 10, 20],
       backgroundColor: "#00C49A",
     },
     {
       label: "Not started",
-      data: [20, 10, 30, 20],
+      data: [55, 25, 75, 55],
       backgroundColor: "#EE6C4D",
     },
     {
       label: "Partially completed",
-      data: [60, 60, 90, 30],
+      data: [30, 55, 15, 25],
       backgroundColor: "#619BFF",
     },
   ],
@@ -34,17 +34,25 @@ const options = {
   },
   elements: {
     bar: {
-      borderWidth: 2,
+      borderWidth: 1,
     },
   },
   responsive: true,
+  scales: {
+    x: {
+      stacked: true,
+    },
+    y: {
+      stacked: true,
+    },
+  },
   plugins: {
     legend: {
       position: "top",
     },
     title: {
       display: true,
-      text: "Module-wise Completion",
+      text: "Module-Wise Completion",
     },
   },
 };
