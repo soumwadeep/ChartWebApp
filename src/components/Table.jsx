@@ -87,24 +87,28 @@ const Table = () => {
               color: "#FFDE4D",
               background: "#FFFBEB",
               borderRadius: "30px",
+              width: "fit-content",
             };
           case "Incomplete":
             return {
               color: "red",
               background: "#FDECF0",
               borderRadius: "30px",
+              width: "fit-content",
             };
           case "Completed":
             return {
               color: "green",
               background: "#EBFFFB",
               borderRadius: "30px",
+              width: "fit-content",
             };
           case "On Track":
             return {
               color: "#619BFF",
               background: "#EBF2FF",
               borderRadius: "30px",
+              width: "fit-content",
             };
           default:
             return null;
